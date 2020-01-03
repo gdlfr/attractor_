@@ -19,3 +19,7 @@ alpha = 0.1
 beta = 4
 xi = 14
 delta = 0.08
+
+# max time and quantity of
+# time points:
+tmax, n = 100, 50000
