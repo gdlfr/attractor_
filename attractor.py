@@ -13,3 +13,9 @@ def LorenzMod1(XYZ, t, alpha, beta, xi, delta):
     y_dt = x*(y - beta*z) + delta
     z_dt = -z + x*(beta*y + z)
     return x_dt, y_dt, z_dt
+
+# system parameters and startup conditions:
+alpha = 0.1
+beta = 4
+xi = 14
+delta = 0.08
