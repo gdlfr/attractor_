@@ -8,4 +8,4 @@
 
 1. python >3
 2. conda
-3. chome
+3. chrome
