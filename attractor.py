@@ -27,3 +27,4 @@ t = np.linspace(0, tmax, n)
 f = odeint(LorenzMod1, (x_0, y_0, z_0), t, args=(alpha, beta, xi, delta))
 X, Y, Z = f.T
 
+### visualization ###
