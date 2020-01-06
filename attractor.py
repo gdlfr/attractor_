@@ -28,3 +28,6 @@ f = odeint(LorenzMod1, (x_0, y_0, z_0), t, args=(alpha, beta, xi, delta))
 X, Y, Z = f.T
 
 ### visualization ###
+
+# color changing massive
+c = np.linspace(0, 1, n)
