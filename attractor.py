@@ -40,8 +40,31 @@ DATA = go.Scatter3d(x=X, y=Y, z=Z,
                               # Greys,YlGnBu,Greens,YlOrRd,Bluered,RdBu,
                               # Reds,Blues,Picnic,Rainbow,Portland,Jet,
                               # Hot,Blackbody,Earth,Electric,Viridis,Cividis.
-                              colorscale="Cividis"),
+                              colorscale="Electric"),
                     #  draw lines only:
                     mode='lines')
 
 fig = go.Figure(data=DATA)
+
+# setup initial parameters for render
+fig.update_layout(width=1000, height=1000,
+                  margin=dict(r=10, l=10, b=10, t=10),
+                  # set background color:
+                  paper_bgcolor='rgb(0,0,0)',
+                  scene=dict(camera=dict(up=dict(x=0, y=0, z=1),
+                                         eye=dict(x=0, y=1, z=1)),
+                             # set propotional ratio
+                             # axis to each other:
+                             aspectratio = dict(x=1, y=1, z=1),
+                             # display as indicated in "aspectratio"
+                             aspectmode = 'manual',
+                             # hide axis:
+                             xaxis=dict(visible=False),
+                             yaxis=dict(visible=False),
+                             zaxis=dict(visible=False)
+                            )
+                 )
+
+### enjoy ###
+
+fig.show()
