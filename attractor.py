@@ -31,3 +31,17 @@ X, Y, Z = f.T
 
 # color changing massive
 c = np.linspace(0, 1, n)
+
+# prepare data to visualize
+DATA = go.Scatter3d(x=X, y=Y, z=Z,
+                    line=dict(color= c,
+                              width=3,
+                              # choosing color palette:
+                              # Greys,YlGnBu,Greens,YlOrRd,Bluered,RdBu,
+                              # Reds,Blues,Picnic,Rainbow,Portland,Jet,
+                              # Hot,Blackbody,Earth,Electric,Viridis,Cividis.
+                              colorscale="Cividis"),
+                    #  draw lines only:
+                    mode='lines')
+
+fig = go.Figure(data=DATA)
