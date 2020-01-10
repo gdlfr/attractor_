@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/gdlfr/attractor_/branch/master/graph/badge.svg?token=qFqybKtF9S)](https://codecov.io/gh/gdlfr/attractor_)
+
 # attractor_
 ## Lorenz system
 ### Mod 1
